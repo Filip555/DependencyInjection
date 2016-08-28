@@ -79,8 +79,8 @@ namespace DI
             //boss.CommandForTheEmployee("Napisz aplikacje w WPF");
 
             SetContainer.SetIt();
-            var a = SetContainer.Container.Resolve<IEmployer>();
-            a.CommandForTheEmployee("Napisz aplikacje w MVC");
+            var boss = SetContainer.Container.Resolve<IEmployer>();
+            boss.CommandForTheEmployee("Napisz aplikacje w MVC");
             Console.ReadKey();
         }
     }
